@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header id="header" class="header">
         <div class="header__inner">
             <img src="/assets/img/logo.png" width="82" alt="" class="logo-img">
             <nav class="nav__menu">
@@ -32,10 +32,29 @@
             </nav>
             <a class="menu__number">(000-00) 0-00-00</a>
         </div>
+        <div class="header__mobile">
+            <button class="btn-menu">
+                <span class="mobile-toggle__line"></span>
+                <span class="mobile-toggle__line"></span>
+                <span class="mobile-toggle__line"></span>
+            </button>
+            <div class="header__mobile-center">
+                <a href="/" class="logo-link"><img src="/assets/img/logo.png" width="82" alt="" class="logo-img-mobile"></a>
+            </div>
+            <div class="header__mobile-right">
+                <a class="header__phone delivery" id="modalMobile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 20">
+                        <path fill="$second-color;" fill-rule="nonzero" stroke="#626467"
+                            d="M5.773 7.35l.064.272c.077.332.361.886.858 1.617.52.766 1.195 1.599 1.784 2.204a17.357 17.357 0 0 0 2.258 1.847c.73.499 1.282.782 1.619.86l.113.028.155.037.174-.218c.11-.14.197-.307.41-.797.203-.473.3-.668.434-.864.197-.285.404-.444.692-.444.098 0 .168.013.297.05.241.071.55.206.929.406.51.269 1.11.64 1.694 1.05a12.84 12.84 0 0 1 1.523 1.224c.45.435.695.764.695 1.051 0 .52-.714 1.346-1.646 2.046C16.768 18.513 15.683 19 14.79 19c-.934 0-2.245-.531-3.762-1.468-1.49-.92-3.098-2.196-4.529-3.594l-.46-.461c-1.383-1.423-2.656-3.035-3.574-4.527C1.532 7.433 1 6.115 1 5.179c0-.898.488-1.99 1.279-3.046.698-.934 1.52-1.65 2.039-1.65.285 0 .614.246 1.046.696.383.398.8.922 1.223 1.528.403.576.775 1.18 1.047 1.696.2.38.335.691.406.933.037.13.05.2.05.299 0 .288-.16.497-.446.695-.17.118-.37.221-.714.372l-.067.03-.084.036c-.475.206-.65.296-.787.406l-.096.076-.123.1z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </div>
     </header>
     <div class="first__banner">
         <div class="banner__inner">
-            <div class="banner__block container">
+            <div class="banner__block container mob-p">
                 <div class="banner-text">
                     <div class="banner-title">Пейте только настоящее</div>
                     <div class="banner-info">Сегодня немного найдется производителей, которые могут поручиться за то,
@@ -87,7 +106,7 @@
         <div class="water__bg">
             <div class="bottle__cap"><img src="/assets/img/cap.png" alt=""></div>
             <div class="bottle__block-title">Что под крышкой?</div>
-            <div class="bottle__block-inner container">
+            <div class="bottle__block-inner container mob-p">
                 <div class="bottle__left-text">
                     <div class="text-item">
                         <div class="text__item-title">Естественный источник</div>
@@ -132,7 +151,7 @@
       </div>
       <div class="about__block">
         <img src="/assets/img/wave.png" alt="" class="about__img-wave">
-        <div class="about-text container">
+        <div class="about-text container mob-p">
             <div class="about__text-title">О нас</div>
             <div class="about__text-info">Горячий Ключ – известный бальнеотерапевтический курорт, расположенный в живописном уголке Предгорий Кавказа, на берегу реки Псекупс, где воздух напоен ароматами закавказской азалии, дикого жасмина и других тропических растений.
                 <br><br>
@@ -195,7 +214,7 @@
       <div class="block__form">
         <div class="form-title">Есть вопросы? Напишите нам!</div>
         <form>
-            <div class="form-container container">
+            <div class="form-container container mob-p">
                 <div class="form-container-input">
                         <input placeholder="Ваше имя" type="text" id="name" name="name">
                         <input placeholder="Ваш телефон" type="text" id="phone" name="phone">
@@ -208,7 +227,7 @@
       </div>
       <div class="contact__block container">
         <div class="contact-title">Наши контакты</div>
-        <div class="contact__block-text">
+        <div class="contact__block-text mob-p">
             <div class="contact-item-1">
                 <div class="contact__item-title">Адрес</div>
                 <div class="contact__item-info">353290, Краснодарский край,
@@ -237,15 +256,51 @@
         </div>
       </div>
       <div id="map"></div>
-      <div class="footer container">
+      <div class="footer container mob-p">
         <div class="footer-text">© 2021    Акционерное общество Завод минеральных вод "Горячеключевской"</div>
         <div class="footer-text">Разработка : Студия К.И.Т.</div>
       </div>
+      <div class="bg-modal-menu">
+      <div class="mobile__menu">
+        <nav>
+            <ul class="nav__mobile" style="margin-top: 20px;">
+                <li class="menu__items"><a href="/" class="logo-link"><img src="/assets/img/logo.png" width="82" alt="" class="logo-img-mobile"></a></li>
+                <li class="menu__items"><a href="#" class="menu-link">Вся продукция</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">О заводе</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">О воде</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Новости</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Отзывы</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Сотрудничество</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Контакты</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">minvod-gkluch@mail.ru</a></li>
+                <li class="menu__items">
+                    <ul class="sitemap-contacts__share share">
+                        <li class="share__item">
+                            <a target="_blank" href="#">
+                                <a href=""><img src="/assets/img/instagram.svg" alt="" class="social-icon-item"></a>
+                            </a>
+                        </li>
+                        <li class="share__item">
+                            <a target="_blank" href="#">
+                                <a href=""><img src="/assets/img/vk.svg" alt="" class="social-icon-item"></a>
+                            </a>
+                        </li>
+                        <li class="share__item">
+                            <a target="_blank" href="#">
+                                <a href=""><img src="/assets/img/ok.svg" alt="" class="social-icon-item"></a>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="/assets/js/slider.js"></script>
     <script src="/assets/js/runString.js"></script>
-    <script src="/assets/js/mapBlock.js"></script>
+    <script src="/assets/js/main.js"></script>
     <script src="/assets/js/validForm.js"></script>
 </body>
 

@@ -2,6 +2,7 @@
 @import "_fonts";
 @import "_vars";
 @import "_form";
+@import "_mobile";
 
 body {
     font-family: $font-des;
@@ -12,6 +13,7 @@ body {
 .header {
     position: absolute;
     width: 100%;
+    z-index: 2;
 }
 .header__inner {
     display: flex;
@@ -21,6 +23,9 @@ body {
     margin: auto;
     justify-content: space-between;
     padding-top: 30px;
+}
+.header__mobile {
+    display: none;
 }
 .btn__product {
     border-radius: 28px;
@@ -523,5 +528,8 @@ body {
 .footer-text {
     opacity: 0.6;
 }
-
+.mob-p {
+    padding-left: 0;
+    padding-right: 0;
+}
 @import "_media";
