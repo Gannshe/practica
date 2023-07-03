@@ -1,0 +1,19 @@
+@media (max-width: 1440px) {
+    .banner__inner {
+        background-position-y: top;
+    }
+}
+@media (max-width: 1280px) {
+    .award__block-item {
+        display: grid;
+        grid-template-columns: 300px 300px 300px !important;
+        grid-template-rows:  300px 300px !important;
+    }
+}
+@media (max-width: 1024px) {
+    .award__block-item {
+        display: grid;
+        grid-template-columns: 400px 400px !important;
+        grid-template-rows:  384px 384px 384px !important;
+    }
+}

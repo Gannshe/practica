@@ -1,0 +1,735 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #2F3439;
+}
+
+@font-face {
+  font-family: "Geared Slab";
+  src: local("Geared Slab"), url(../fonts/GearedSlab.ttf);
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  src: local("SF Pro Display"), url(../fonts/SF-Pro-Display-Regular.otf);
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  src: local("SF Pro Display"), url(../fonts/SF-Pro-Display-Semibold.otf);
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  src: local("SF Pro Display"), url(../fonts/SF-Pro-Display-Bold.otf);
+}
+.form-title {
+  text-align: center;
+  font-family: "Geared Slab";
+  font-size: 62px;
+  margin-top: 120px;
+}
+
+.form-container-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+  margin-bottom: 32px;
+  margin-top: 100px;
+}
+
+.form-container-input input {
+  border: 0;
+  padding: 0 0 11px 0;
+  border-bottom: 2px solid #2F3439;
+  font-size: 16px;
+  max-width: 300px;
+  width: 100%;
+  height: 30px;
+}
+
+.form-container-input textarea {
+  max-width: 622px;
+  width: 100%;
+  border: 0;
+  padding: 0 0 11px 0;
+  border-bottom: 2px solid #2F3439;
+  font-size: 16px;
+  resize: none;
+  overflow: hidden;
+  height: 30px;
+}
+
+.form-button {
+  border-radius: 40px;
+  color: #fff;
+  background: #23994B;
+  padding: 12px 48px;
+  border: 0;
+  cursor: pointer;
+  float: right;
+}
+.form-button:hover {
+  background: #14642f;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.form-info {
+  font-size: 13px;
+  opacity: 0.6;
+  margin-top: 45px;
+}
+
+body {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  color: #2F3439;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1240px;
+  width: 100%;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 30px;
+}
+
+.btn__product {
+  border-radius: 28px;
+  background-color: #fff;
+  padding: 10px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 100px;
+}
+.btn__product img {
+  margin-right: 13px;
+}
+
+.nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__menu__inner {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.nav__menu__inner .menu-item {
+  margin: 0 10px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+}
+.nav__menu__inner .menu-item a:hover {
+  color: #23994B;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.menu__number {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.first__banner {
+  width: 100%;
+  height: 100vh;
+  background-color: #e7ecf0;
+}
+
+.banner__block {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner__inner {
+  background: url(../img/bottle.png);
+  max-width: 1920px;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+.banner__inner .banner-text {
+  width: 480px;
+}
+.banner__inner .banner-text .banner-title {
+  font-family: "Geared Slab";
+  font-size: 88px;
+  color: #2F3439;
+  line-height: 84px;
+  margin-bottom: 26px;
+}
+.banner__inner .banner-text .banner-info {
+  font-family: "SF Pro Display";
+  font-size: 18;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 73px;
+}
+.banner__inner .banner-text .banner-btn {
+  padding: 20px 35px;
+  background: #23994B;
+  border-radius: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+.banner__inner .banner-text .banner-btn:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: #14642f;
+}
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin: auto;
+}
+
+.slider__product {
+  background: #fff;
+  height: 880px;
+}
+
+.swiper .swiper-wrapper {
+  gap: 15px;
+}
+.swiper .swiper-wrapper .swiper-slide {
+  text-align: center;
+  background-color: #eceff2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 520px;
+  width: 400px;
+}
+.swiper .swiper-wrapper .swiper-slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  color: #000;
+  background: #fff;
+  border-radius: 50px;
+  width: 72px;
+  height: 72px;
+  -webkit-box-shadow: 0px 0px 31px -4px rgba(34, 60, 80, 0.2);
+          box-shadow: 0px 0px 31px -4px rgba(34, 60, 80, 0.2);
+}
+.swiper-button-next::after,
+.swiper-rtl .swiper-button-prev::after {
+  font-size: 22px;
+  font-weight: 600;
+  padding-left: 5px;
+}
+.swiper-button-next:hover,
+.swiper-rtl .swiper-button-prev:hover {
+  background: #14642f;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.swiper-button-next:hover::after,
+.swiper-rtl .swiper-button-prev:hover::after {
+  color: #fff;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  color: #000;
+  background: #fff;
+  border-radius: 50px;
+  width: 72px;
+  height: 72px;
+  -webkit-box-shadow: 0px 0px 31px -4px rgba(34, 60, 80, 0.2);
+          box-shadow: 0px 0px 31px -4px rgba(34, 60, 80, 0.2);
+}
+.swiper-button-prev::after,
+.swiper-rtl .swiper-button-next::after {
+  font-size: 22px;
+  font-weight: 600;
+  padding-right: 5px;
+}
+.swiper-button-prev:hover,
+.swiper-rtl .swiper-button-next:hover {
+  background: #14642f;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.swiper-button-prev:hover::after,
+.swiper-rtl .swiper-button-next:hover::after {
+  color: #fff;
+}
+
+.swiper-button-disabled {
+  opacity: 0;
+}
+
+.slider-title {
+  font-family: "Geared Slab";
+  font-size: 62px;
+  color: #2F3439;
+  margin: 76px auto 70px;
+  text-align: center;
+}
+
+.btn__all-catalog {
+  padding: 20px 35px;
+  background: #23994B;
+  border-radius: 40px;
+  color: #fff;
+  width: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 54px auto 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+.btn__all-catalog:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-color: #14642f;
+}
+
+.marquee {
+  overflow: hidden;
+  width: 100%;
+}
+.marquee ul {
+  display: inline-block;
+  -webkit-animation: marquee 35s linear infinite;
+          animation: marquee 35s linear infinite;
+  white-space: nowrap;
+  padding-left: 100%;
+  margin: 0;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+.marquee li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+.marquee-second {
+  overflow: hidden;
+  width: 100%;
+}
+.marquee-second ul {
+  display: inline-block;
+  -webkit-animation: marqueeSecond 35s linear infinite;
+          animation: marqueeSecond 35s linear infinite;
+  white-space: nowrap;
+  padding-left: 100%;
+  margin: 0;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+.marquee-second li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+@-webkit-keyframes marqueeSecond {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes marqueeSecond {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+.bottle__block {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 247, 249, 0)), color-stop(31.77%, #F5F7F9));
+  background: linear-gradient(180deg, rgba(245, 247, 249, 0) 0%, #F5F7F9 31.77%);
+  height: 1500px;
+}
+
+.water__bg {
+  background: url(../img/waterBg.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 100%;
+  height: 400px;
+  margin-top: 60px;
+  position: relative;
+}
+.water__bg .bottle__cap {
+  text-align: center;
+}
+.water__bg .bottle__cap img {
+  margin-top: 192px;
+}
+.water__bg .bottle__block-title {
+  color: #2F3439;
+  font-family: "Geared Slab";
+  font-size: 62px;
+  text-align: center;
+  margin-top: 36px;
+}
+
+.bottle__block-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bottle__center-item {
+  width: 512px;
+}
+.bottle__center-item .bottle__center-img-shadow {
+  float: right;
+}
+
+.text-item {
+  margin-bottom: 100px;
+}
+.text-item .text__item-title {
+  margin-bottom: 14px;
+  font-weight: 700;
+  font-size: 24px;
+}
+.text-item .text__item-info {
+  max-width: 305px;
+  width: 100%;
+}
+
+.about__block {
+  position: relative;
+}
+.about__block .about__img-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+}
+.about__block .about-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 143px;
+  margin-bottom: 155px;
+}
+.about__block .about-text .about__text-title {
+  font-size: 62px;
+  font-family: "Geared Slab";
+}
+.about__block .about-text .about__text-info {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  max-width: 925px;
+  width: 100%;
+}
+
+.about-slider {
+  width: 100%;
+  height: 500px;
+  overflow-x: hidden;
+}
+.about-slider .swiper-wrapper .swiper-slide {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 500px;
+  width: auto;
+}
+.about-slider .swiper-wrapper .swiper-slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.awards__block {
+  max-width: 1280px;
+  width: 100%;
+  margin: 100px auto 100px;
+}
+.awards__block .awards__block-title {
+  font-family: "Geared Slab";
+  font-size: 62px;
+  text-align: center;
+  margin-bottom: 54px;
+}
+.awards__block .award__block-inner {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+.awards__block .award__block-inner .award__block-item {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 384px 384px;
+  grid-column-gap: 40px;
+  grid-row-gap: 34px;
+  justify-self: center;
+  align-self: center;
+}
+.awards__block .award__block-inner .award__block-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: radial-gradient(86.25% 86.25% at 50% 50%, #FFF 0%, rgba(255, 255, 255, 0) 100%), #ECEFF2;
+}
+
+.social__block {
+  width: 100%;
+}
+.social__block .social__block-title {
+  font-family: "Geared Slab";
+  font-size: 62px;
+  text-align: center;
+}
+.social__block .social__block-info {
+  font-size: 24px;
+  opacity: 0.8;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.social__block .social__block-gallery {
+  background: #E7ECF1;
+  height: 960px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.social__block .social__block-gallery .social__gallery__inner {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 462px 462px 462px 462px;
+  grid-template-rows: 578px 578px 578px 578px;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-15deg);
+          transform: translate(-50%, -50%) rotate(-15deg);
+}
+.social__block .social__block-gallery .social__gallery__inner img:hover {
+  -webkit-box-shadow: -16px 24px 20px 0px rgba(0, 0, 0, 0.16);
+          box-shadow: -16px 24px 20px 0px rgba(0, 0, 0, 0.16);
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contact__block .contact__block-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact__block .contact__block-text .contact-item {
+  width: 235px;
+}
+
+.contact-title {
+  font-family: "Geared Slab";
+  font-size: 62px;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 87px;
+}
+
+.contact-item-1 {
+  width: 235px;
+}
+
+.contact-item-2 {
+  width: 184px;
+}
+
+.contact-item-3 {
+  width: 145px;
+}
+
+.contact-item-4 {
+  width: 162px;
+}
+
+.contact__item-title {
+  margin-bottom: 14px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.contact__item-info {
+  font-weight: 400;
+  line-height: 24px;
+  opacity: 0.8;
+}
+
+.social-icons-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+.social-icons-block a {
+  margin-right: 22px;
+}
+
+.ya_map {
+  font-family: arial;
+  font-size: 12px;
+  color: #454545;
+}
+
+#map {
+  width: 100%;
+  height: 560px;
+  margin-top: 90px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+}
+
+.footer-text {
+  opacity: 0.6;
+}
+
+@media (max-width: 1440px) {
+  .banner__inner {
+    background-position-y: top;
+  }
+}
+@media (max-width: 1280px) {
+  .award__block-item {
+    display: grid;
+    grid-template-columns: 300px 300px 300px !important;
+    grid-template-rows: 300px 300px !important;
+  }
+}
+@media (max-width: 1024px) {
+  .award__block-item {
+    display: grid;
+    grid-template-columns: 400px 400px !important;
+    grid-template-rows: 384px 384px 384px !important;
+  }
+}
